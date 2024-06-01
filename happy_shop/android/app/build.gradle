@@ -3,7 +3,8 @@ plugins {
     id "kotlin-android"
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id "dev.flutter.flutter-gradle-plugin"
-    id 'com.google.gms.google-services'  // Apply Google services plugin here
+    id 'com.google.gms.google-services'
+   
 }
 
 def localProperties = new Properties()
@@ -57,6 +58,3 @@ android {
 flutter {
     source = "../.."
 }
-
-// Remove the redundant 'apply plugin' line
-// apply plugin: 'com.google.gms.google-services'  // This is now included in the plugins block
