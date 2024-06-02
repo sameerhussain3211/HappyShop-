@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import '../../../components/my_text_feild.dart';
 import '../blocs/sign_in_bloc/sign_in_bloc.dart';
 
@@ -28,6 +27,7 @@ class _SignInScreenState extends State<SignInScreen> {
         if (state is SignInSuccess) {
           setState(() {
             signInRequired = false;
+            _errorMsg = null;
           });
         } else if (state is SignInProcess) {
           setState(() {
@@ -36,7 +36,7 @@ class _SignInScreenState extends State<SignInScreen> {
         } else if (state is SignInFailure) {
           setState(() {
             signInRequired = false;
-            _errorMsg = 'Invalid email or password';
+            _errorMsg = state.toString();
           });
         }
       },
@@ -105,10 +105,9 @@ class _SignInScreenState extends State<SignInScreen> {
                       child: TextButton(
                           onPressed: () {
                             if (_formKey.currentState!.validate()) {
-                              // context.read<SignInBloc>().add(SignInRequired(
-                              //     emailController.text,
-                              //     passwordController.text
-                              //     ));
+                              context.read<SignInBloc>().add(SignInRequired(
+                                  email: emailController.text,
+                                  password: passwordController.text));
                             }
                           },
                           style: TextButton.styleFrom(

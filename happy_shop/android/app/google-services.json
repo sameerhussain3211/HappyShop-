@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:252522097441:android:868f64ee27869f819c2c60",
+        "mobilesdk_app_id": "1:252522097441:android:6cff1eaa536889dc9c2c60",
         "android_client_info": {
-          "package_name": "com.example.happy_shop"
+          "package_name": "com.example.happy_sh"
         }
       },
       "oauth_client": [],
