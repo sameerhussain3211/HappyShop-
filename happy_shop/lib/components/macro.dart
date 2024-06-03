@@ -3,7 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class MyMacroWidget extends StatelessWidget {
   final String title;
-  final int value;
+  final String value;
   final IconData icon;
 
   const MyMacroWidget(
@@ -35,9 +35,14 @@ class MyMacroWidget extends StatelessWidget {
             ),
             const SizedBox(height: 4),
             Text(
-              title == "Calories" ? '$value $title' : '${value}g $title',
-              style: const TextStyle(fontSize: 10),
-            )
+              title == "length" ? '${value} cm' : '${value}',
+              style: const TextStyle(
+                fontSize: 10,
+              ),
+            ),
+            Text('$title',
+                style:
+                    const TextStyle(fontSize: 12, fontWeight: FontWeight.bold))
           ],
         ),
       ),

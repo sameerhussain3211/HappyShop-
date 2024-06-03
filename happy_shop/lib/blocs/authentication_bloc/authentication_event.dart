@@ -1,6 +1,5 @@
 part of 'authentication_bloc.dart';
 
-@immutable
 sealed class AuthenticationEvent extends Equatable {
   const AuthenticationEvent();
 
@@ -10,5 +9,6 @@ sealed class AuthenticationEvent extends Equatable {
 
 class AuthenticationUserChanged extends AuthenticationEvent {
   final MyUser? user;
+
   const AuthenticationUserChanged(this.user);
 }

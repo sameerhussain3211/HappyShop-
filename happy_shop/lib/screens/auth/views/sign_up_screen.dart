@@ -188,14 +188,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         style: TextStyle(
                             color: containsSpecialChar
                                 ? Colors.green
-                                : Theme.of(context).colorScheme.onBackground),
+                                : Theme.of(context).colorScheme.onSurface),
                       ),
                       Text(
                         "⚈  8 minimum character",
                         style: TextStyle(
                             color: contains8Length
                                 ? Colors.green
-                                : Theme.of(context).colorScheme.onBackground),
+                                : Theme.of(context).colorScheme.onSurface),
                       ),
                     ],
                   ),
