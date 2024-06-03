@@ -2,6 +2,7 @@ import 'dart:developer';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+// import 'package:google_sign_in/google_sign_in.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:user_repository/src/entities/user_entity.dart';
 import 'package:user_repository/src/models/user.dart';
@@ -68,4 +69,23 @@ class FirebaseUserRepo implements UserRepository {
       rethrow;
     }
   }
+
+  // @override
+  // Future<User?> signinWithGoogle() async {
+  //   try {
+  //     final googleUser = await GoogleSignIn().signIn();
+  //     if (googleUser == null) {
+  //       return null;
+  //     }
+  //     final googleAuth = await googleUser.authentication;
+  //     final crads = GoogleAuthProvider.credential(
+  //         accessToken: googleAuth.accessToken, idToken: googleAuth.idToken);
+
+  //     final userCradentials = await _firebaseAuth.signInWithCredential(crads);
+  //     return userCradentials.user;
+  //   } catch (e) {
+  //     print(e);
+  //     return null;
+  //   }
+  // }
 }

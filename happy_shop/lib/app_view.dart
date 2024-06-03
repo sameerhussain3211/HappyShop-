@@ -13,7 +13,7 @@ class MyAppView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Pizza Delivery',
+        title: 'product',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
             colorScheme: ColorScheme.light(
