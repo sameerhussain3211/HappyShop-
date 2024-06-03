@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:happy_shop/screens/home/views/profile.dart';
 
 import '../../auth/blocs/sign_in_bloc/sign_in_bloc.dart';
 import '../blocs/get_product_bloc/get_product_bloc.dart';
@@ -29,7 +30,16 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
         actions: [
-          IconButton(onPressed: () {}, icon: const Icon(CupertinoIcons.cart)),
+          IconButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute<void>(
+                    builder: (BuildContext context) => Profile(),
+                  ),
+                );
+              },
+              icon: const Icon(CupertinoIcons.profile_circled)),
           IconButton(
               onPressed: () {
                 context.read<SignInBloc>().add(SignOutRequired());
