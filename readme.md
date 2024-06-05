@@ -13,8 +13,8 @@ Welcome to the eCommerce App! This project is built using Flutter for the fronte
 
 ## Screenshots
 
-![Home Screen](screenshots/home.png)
-![Product Details](screenshots/product_details.png)
+![Home Screen](/home.png)
+![Product Details](assects/images/pic.jpeg)
 ![Cart](screenshots/cart.png)
 
 ## Technologies Used
