@@ -1,6 +1,7 @@
 # eCommerce App
 
 Welcome to the eCommerce App! This project is built using Flutter for the frontend, Firebase for backend services, and Bloc for state management. The app allows users to sign in, sign up, view a list of products, see product details, buy products, view their profile, add items to their cart, and more.
+..
 
 ## Features
 
@@ -13,9 +14,14 @@ Welcome to the eCommerce App! This project is built using Flutter for the fronte
 
 ## Screenshots
 
-![Home Screen](/home.png)
-![Product Details](assects/images/pic.jpeg)
-![Cart](screenshots/cart.png)
+
+![sign IN](/happy_shop/assects/images/pic.jpeg)
+![sign UP](/happy_shop/assects/images/pic1.jpeg)
+![Home](/happy_shop/assects/images/pic2.jpeg)
+![details](/happy_shop/assects/images/pic3.jpeg)
+![Buy](/happy_shop/assects/images/pic4.jpeg)
+![profile](/happy_shop/assects/images/pic5.jpeg)
+
 
 ## Technologies Used
 
@@ -37,7 +43,7 @@ To get started with the project, follow the steps below:
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/yourusername/ecommerce_app.git
+    https://github.com/sameerhussain3211/HappyShop-
     cd ecommerce_app
     ```
 
